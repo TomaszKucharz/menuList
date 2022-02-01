@@ -63,15 +63,11 @@ const changePageToLeft = () =>
       btnRight.style.visibility = "visible"
       breakfast();
    }
-
-   // console.log("text");
-
 }
 
 
 const breakfast = () =>
 {
-
    clear()
    document.querySelector(`.header`).style.backgroundImage = `url(./pancakes-2291908_1920.jpg)`;
    document.querySelector(`h1`).textContent = `Breakfast-list`;
