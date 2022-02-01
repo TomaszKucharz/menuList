@@ -54,6 +54,7 @@ const changePageToLeft = () =>
       btnLeft.style.visibility = "hidden"
       document.querySelector(`.header`).style.backgroundImage = `url(./bar-g175f68357_1920.jpg)`;
       document.querySelector(`h1`).textContent = `Drink-list`;
+      document.querySelector(`h2`).textContent = `Lista dostępnych napojów:`;
       document.querySelector(`input`).placeholder = "Wpisz nazwę szukanego napoju"
       listL = drinkList;
       start()
@@ -71,6 +72,7 @@ const breakfast = () =>
    clear()
    document.querySelector(`.header`).style.backgroundImage = `url(./pancakes-2291908_1920.jpg)`;
    document.querySelector(`h1`).textContent = `Breakfast-list`;
+   document.querySelector(`h2`).textContent = `Lista dostępnych posiłków:`;
    document.querySelector(`input`).placeholder = "Wpisz nazwę szukanego śniadania"
    listL = breakfastList;
    start();
