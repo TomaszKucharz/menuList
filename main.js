@@ -29,8 +29,9 @@ let listL = drinkList;
 const lastPage = ["drinkList", "breakfastList", "lunchList"];
 
 let flag = 0;
-const changePageToRight = () =>
+const changePageToRight = (e) =>
 {
+   e.preventDefault();
    flag++;
    console.log(flag);
    btnLeft.style.visibility = "visible"
@@ -44,8 +45,9 @@ const changePageToRight = () =>
    }
 }
 
-const changePageToLeft = () =>
+const changePageToLeft = (e) =>
 {
+   e.preventDefault();
    flag--;
    console.log(flag);
    if (flag === 0)
